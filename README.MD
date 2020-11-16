@@ -25,9 +25,12 @@ This app generates a subject-specific parcellation of subcortical areas using th
 [Avesani, P., McPherson, B., Hayashi, S. et al. The open diffusion data derivatives, brain data upcycling via integrated publishing of derivatives and reproducible open cloud services. Sci Data 6, 69 (2019).](https://doi.org/10.1038/s41597-019-0073-y)
 
 [Pauli, W., Nili, A. & Tyszka, J. A high-resolution probabilistic in vivo atlas of human subcortical brain nuclei. Sci Data 5, 180063 (2018).](https://doi.org/10.1038/sdata.2018.63)
+[human subcortical brain nuclei atlas](https://identifiers.org/neurovault.collection:3145)
+(**Note**, [atlaskit](https://github.com/jmtyszka/atlaskit/wiki) presumes a 4D structured probabalistic atlas.  As such, local machine users will need to use [fslmerge](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Fslutils) on the separated, 3D atlas volumes in order to make a 4D atlas.
 
 [**atlaskit**](https://github.com/jmtyszka/atlaskit/wiki)
 [![DOI](https://zenodo.org/badge/33556742.svg)](https://zenodo.org/badge/latestdoi/33556742)
+
 
 ## Running the App 
 
@@ -49,7 +52,7 @@ Ensure the appropriate software is installed on your local machine
 | Python   | High-level coding            | 3.4+    | https://www.python.org/         |
 | FSL      | Neuroimaging analysis        | 5.0.9+  | https://fsl.fmrib.ox.ac.uk/     |
 | ANTs     | Image warp registration      | 2.1.0+  | https://github.com/stnava/ANTs/ |
-| CIT168   | Templates and amygdala atlas | 1.0.3+  | https://osf.io/hksa6/           |
+| CIT168   | Templates and atlas          | 1.0.0 ? | https://identifiers.org/neurovault.collection:3145 |
 
 Utilize a config.json setup that is analagous to the one contained within this repo, listed as a sample.
 
