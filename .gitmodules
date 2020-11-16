@@ -1,0 +1,3 @@
+[submodule "atlaskit"]
+	path = atlaskit
+	url = https://github.com/jmtyszka/atlaskit
