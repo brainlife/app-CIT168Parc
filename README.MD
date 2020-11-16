@@ -1,5 +1,5 @@
 [![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
-[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.188-blue.svg)](https://doi.org/10.25663/brainlife.app.188)
+[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.449-blue.svg)](https://doi.org/10.25663/brainlife.app.449)
 
 # app-CIT168Parc
 This app generates a subject-specific parcellation of subcortical areas using the CIT168 parcellation.
@@ -24,8 +24,10 @@ This app generates a subject-specific parcellation of subcortical areas using th
 ### References 
 [Avesani, P., McPherson, B., Hayashi, S. et al. The open diffusion data derivatives, brain data upcycling via integrated publishing of derivatives and reproducible open cloud services. Sci Data 6, 69 (2019).](https://doi.org/10.1038/s41597-019-0073-y)
 
-[Pauli, W., Nili, A. & Tyszka, J. A high-resolution probabilistic in vivo atlas of human subcortical brain nuclei. Sci Data 5, 180063 (2018).](https://doi.org/10.1038/sdata.2018.63)
-[human subcortical brain nuclei atlas](https://identifiers.org/neurovault.collection:3145)
+[Pauli, W., Nili, A. & Tyszka, J. A high-resolution probabilistic in vivo atlas of human subcortical brain nuclei. Sci Data 5, 180063 (2018).](https://doi.org/10.1038/sdata.2018.63)  
+
+[human subcortical brain nuclei atlas](https://identifiers.org/neurovault.collection:3145)  
+
 (**Note**, [atlaskit](https://github.com/jmtyszka/atlaskit/wiki) presumes a 4D structured probabalistic atlas.  As such, local machine users will need to use [fslmerge](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Fslutils) on the separated, 3D atlas volumes in order to make a 4D atlas.
 
 [**atlaskit**](https://github.com/jmtyszka/atlaskit/wiki)
@@ -36,7 +38,8 @@ This app generates a subject-specific parcellation of subcortical areas using th
 
 ### On Brainlife.io
 
-Visit https://doi.org/10.25663/brainlife.app.188 to run this app on the brainlife.io platform.  Requires a T1 structural image as input.
+
+Visit https://doi.org/10.25663/brainlife.app.449 to run this app on the brainlife.io platform.  Requires a T1 structural image as input.
 
 ### Running Locally (on your machine) using singularity & docker
 
@@ -72,9 +75,17 @@ Not relevant for this App as it does not generate processed data.
 
 ### Dependencies
 
-This Dockerized App only requires [singularity](https://www.sylabs.io/singularity/) and (in some cases) Freesurfer to run. If you don't have singularity, you will need to install following dependencies.  
+This Dockerized App only requires [singularity](https://www.sylabs.io/singularity/) and (in some cases) run. If you don't have singularity, you will need to install following dependencies.  
 
 https://singularity.lbl.gov/docs-installation
 https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall
+
+Ensure the appropriate software is installed on your local machine
+| Software | Description                  | Version | Link                            |
+|----------|------------------------------|---------|---------------------------------|
+| Python   | High-level coding            | 3.4+    | https://www.python.org/         |
+| FSL      | Neuroimaging analysis        | 5.0.9+  | https://fsl.fmrib.ox.ac.uk/     |
+| ANTs     | Image warp registration      | 2.1.0+  | https://github.com/stnava/ANTs/ |
+| CIT168   | Templates and atlas          | 1.0.0 ? | https://identifiers.org/neurovault.collection:3145 |
  
 
