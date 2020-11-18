@@ -7,6 +7,6 @@ set -e
 set -x
 
 echo "performing parcellation generation"
-singularity exec -e docker://brainlife/atlaskit ./CTI168wrapper.sh
+singularity exec -e docker://brainlife/atlaskit:1.0  ./CIT168wrapper.sh
 
 #brainlife issue rasing stuff goes here

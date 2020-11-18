@@ -1,0 +1,168 @@
+[
+    {
+        "name": "background",
+        "desc": "Voxel values of 0 indicate that the voxel doesn't belong to any area relevant to this segmentation",
+        "voxel_value": 0
+    },
+    {
+        "name": "Left-putamen",
+        "desc": "Voxel values of 1 indicate that the voxel belongs to the left-putamen",
+        "voxel_value": 1
+    },
+    {
+        "name": "Right-putamen",
+        "desc": "Voxel values of 2 indicate that the voxel belongs to the right-putamen",
+        "voxel_value": 2
+    },
+    {
+        "name": "Left-caudate",
+        "desc": "Voxel values of 3 indicate that the voxel belongs to the left-caudate",
+        "voxel_value": 3
+    },
+    {
+        "name": "Right-caudate",
+        "desc": "Voxel values of 4 indicate that the voxel belongs to the right-caudate",
+        "voxel_value": 4
+    },
+    {
+        "name": "Left-nucleus-accumbens",
+        "desc": "Voxel values of 5 indicate that the voxel belongs to the left-nucleus-accumbens",
+        "voxel_value": 5
+    },
+    {
+        "name": "Right-nucleus-accumbens",
+        "desc": "Voxel values of 6 indicate that the voxel belongs to the right-nucleus-accumbens",
+        "voxel_value": 6
+    },
+    {
+        "name": "Left-extended-amygdala",
+        "desc": "Voxel values of 7 indicate that the voxel belongs to the left-extended-amygdala",
+        "voxel_value": 7
+    },
+    {
+        "name": "Right-extended-amygdala",
+        "desc": "Voxel values of 8 indicate that the voxel belongs to the right-extended-amygdala",
+        "voxel_value": 8
+    },
+    {
+        "name": "Left-external-globus-pallidus",
+        "desc": "Voxel values of 9 indicate that the voxel belongs to the left-external-globus-pallidus",
+        "voxel_value": 9
+    },
+    {
+        "name": "Right-external-globus-pallidus",
+        "desc": "Voxel values of 10 indicate that the voxel belongs to the right-external-globus-pallidus",
+        "voxel_value": 10
+    },
+    {
+        "name": "Left-internal-globus-pallidus",
+        "desc": "Voxel values of 11 indicate that the voxel belongs to the leftinternal-globus-pallidus",
+        "voxel_value": 11
+    },
+    {
+        "name": "Right-internal-globus-pallidus",
+        "desc": "Voxel values of 12 indicate that the voxel belongs to the right-internal-globus-pallidus",
+        "voxel_value": 12
+    },
+    {
+        "name": "Left-substantia-nigra-pars-compacta",
+        "desc": "Voxel values of 13 indicate that the voxel belongs to the left-substantia-nigra-pars-compacta",
+        "voxel_value": 13
+    },
+    {
+        "name": "Right-substantia-nigra-pars-compacta",
+        "desc": "Voxel values of 14 indicate that the voxel belongs to the right-substantia-nigra-pars-compacta",
+        "voxel_value": 14
+    },
+    {
+        "name": "Left-red-nucleus",
+        "desc": "Voxel values of 15 indicate that the voxel belongs to the left-red-nucleus",
+        "voxel_value": 15
+    },
+    {
+        "name": "Right-red-nucleus",
+        "desc": "Voxel values of 16 indicate that the voxel belongs to the right-red-nucleus",
+        "voxel_value": 16
+    },
+    {
+        "name": "Left-substantia-nigra-pars-reticulata",
+        "desc": "Voxel values of 17 indicate that the voxel belongs to the left-substantia-nigra-pars-reticulata",
+        "voxel_value": 17
+    },
+    {
+        "name": "Right-substantia-nigra-pars-reticulata",
+        "desc": "Voxel values of 18 indicate that the voxel belongs to the right-substantia-nigra-pars-reticulata",
+        "voxel_value": 18
+    },
+    {
+        "name": "Left-parabrachial-pigmented-nucleus",
+        "desc": "Voxel values of 19 indicate that the voxel belongs to the left-parabrachial-pigmented-nucleus ",
+        "voxel_value": 19
+    },
+    {
+        "name": "Right-parabrachial-pigmented-nucleus",
+        "desc": "Voxel values of 20 indicate that the voxel belongs to the right-parabrachial-pigmented-nucleus ",
+        "voxel_value": 20
+    },
+    {
+        "name": "Left-ventral-tegmental-area",
+        "desc": "Voxel values of 21 indicate that the voxel belongs to the left-ventral-tegmental-area",
+        "voxel_value": 21
+    },
+    {
+        "name": "Right-ventral-tegmental-area",
+        "desc": "Voxel values of 22 indicate that the voxel belongs to the right-ventral-tegmental-area",
+        "voxel_value": 22
+    },
+    {
+        "name": "Left-ventral-pallidum",
+        "desc": "Voxel values of 23 indicate that the voxel belongs to the left-ventral-pallidum",
+        "voxel_value": 23
+    },
+    {
+        "name": "Right-ventral-pallidum",
+        "desc": "Voxel values of 24 indicate that the voxel belongs to the right-ventral-pallidum",
+        "voxel_value": 24
+    },
+    {
+        "name": "Left-habenular-nucleus",
+        "desc": "Voxel values of 25 indicate that the voxel belongs to the left-habenular_nucleus",
+        "voxel_value": 25
+    },
+    {
+        "name": "Right-habenular-nucleus",
+        "desc": "Voxel values of 26 indicate that the voxel belongs to the right-habenular_nucleus",
+        "voxel_value": 26
+    },
+    {
+        "name": "Left-hypothalamus",
+        "desc": "Voxel values of 27 indicate that the voxel belongs to the left-hypothalamus",
+        "voxel_value": 27
+    },
+    {
+        "name": "Right-hypothalamus",
+        "desc": "Voxel values of 28 indicate that the voxel belongs to the right-hypothalamus",
+        "voxel_value": 28
+    },
+    {
+        "name": "Left-mamillary-nucleus",
+        "desc": "Voxel values of 29 indicate that the voxel belongs to the left-mamillary-nucleus",
+        "voxel_value": 29
+    },
+    {
+        "name": "Right-mamillary-nucleus",
+        "desc": "Voxel values of 30 indicate that the voxel belongs to the right-mamillary-nucleus",
+        "voxel_value": 30
+    },
+    {
+        "name": "Left-subthalamic-nucleus",
+        "desc": "Voxel values of 31 indicate that the voxel belongs to the left-subthalamic-nucleus",
+        "voxel_value": 31
+    },
+    {
+        "name": "Right-subthalamic-nucleus",
+        "desc": "Voxel values of 32 indicate that the voxel belongs to the right-subthalamic-nucleus",
+        "voxel_value": 32
+    },
+
+]
