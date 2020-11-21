@@ -4,7 +4,7 @@
 <img src="birdface.gif" alt="birdface" width="232" height="193"/>
 
 # app-CIT168Parc
-This app generates a subject-specific parcellation of subcortical areas using the CIT168 parcellation.
+This app generates a subject-specific parcellation of subcortical areas using the [CIT168 parcellation](https://identifiers.org/neurovault.collection:3145).
 
 ### Authors
 - Daniel Bullock (dnbulloc@iu.edu)
