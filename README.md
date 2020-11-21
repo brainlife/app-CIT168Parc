@@ -32,7 +32,8 @@ This app generates a subject-specific parcellation of subcortical areas using th
 
 (**Note**, the above parcellation _is not_ lateralized (in that the left and right variants of a structure receive the same label).  Thus for local users, in order to lateralize the structure a method akin to the one found [here](https://github.com/brainlife/app-CIT168Parc/issues/2) must be implemented.  Alternatively, the [docker container associated with this app](https://hub.docker.com/r/brainlife/atlaskit) contains a [lateralized version of this atlas](https://github.com/brainlife/docker-atlaskit/tree/master/CIT168Atlases), [found within the "template" directory](https://github.com/brainlife/docker-atlaskit/blob/b6fc856a7ac82dd52294e0aab2356465a79f0e11/Dockerfile#L32).
 
-[**atlaskit**](https://github.com/jmtyszka/atlaskit/wiki), "Tools for working with deterministic and probabilistic anatomic atlas labels" ([wiki page](https://github.com/jmtyszka/atlaskit/wiki )
+[**atlaskit**](https://github.com/jmtyszka/atlaskit/wiki), "Tools for working with deterministic and probabilistic anatomic atlas labels" ([wiki page](https://github.com/jmtyszka/atlaskit/wiki))
+
 [![DOI](https://zenodo.org/badge/33556742.svg)](https://zenodo.org/badge/latestdoi/33556742)
 
 (**Note**, [atlaskit](https://github.com/jmtyszka/atlaskit/wiki) presumes a 4D structured probabalistic atlas.  As such, local machine users will need to use [fslmerge](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Fslutils) on the separated, 3D atlas volumes in order to make a 4D atlas.)
