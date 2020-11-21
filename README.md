@@ -50,7 +50,7 @@ Because there is a docker container for appropriate for this code you can run th
 
 ### Running Locally (on your machine)
 
-Pull this (app-CIT168Parc) repo.
+[Pull](https://git-scm.com/docs/git-pull) [this (i.e. app-CIT168Parc) repo](https://github.com/brainlife/app-CIT168Parc).
 
 Ensure the appropriate software is installed on your local machine
 | Software | Description                  | Version | Link                            |
