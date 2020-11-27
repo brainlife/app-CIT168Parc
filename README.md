@@ -70,7 +70,7 @@ Visit brainlife.io and explore any data set containg T1 data:
 
 ## Inputs
 
-- [anat/t1w](https://brainlife.io/datatypes/58c33bcee13a50849b25879a) - the T1 anatomy for this subject.  !brain_extracted tag is due to use of [specific (non-skull-stripped) t1 atlas](https://github.com/brainlife/app-subj2reference/blob/a11276b3fc20bcd6099a1c2e333232d80ce9c0ef/CoordTransform.sh#L21)
+- [anat/t1w](https://brainlife.io/datatypes/58c33bcee13a50849b25879a) - the T1 anatomy for this subject.  !brain_extracted tag is due to use of [specific (non-skull-stripped) t1 atlas](https://github.com/brainlife/app-CIT168Parc/blob/363fea329bcbccd383f08496f4934747053a83f4/CIT168wrapper.sh#L11)
 
 ## Output
 
