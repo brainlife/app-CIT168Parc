@@ -68,6 +68,10 @@ Visit brainlife.io and explore any data set containg T1 data:
 
 [Human Connectome Project 3T](https://brainlife.io/project/5941a225f876b000210c11e5/detail)
 
+## Inputs
+
+- [anat/t1w](https://brainlife.io/datatypes/58c33bcee13a50849b25879a) - the T1 anatomy for this subject.  !brain_extracted tag is due to use of [specific (non-skull-stripped) t1 atlas](https://github.com/brainlife/app-subj2reference/blob/a11276b3fc20bcd6099a1c2e333232d80ce9c0ef/CoordTransform.sh#L21)
+
 ## Output
 
 This app outputs a [parcellation type](https://brainlife.io/datatype/5c1a7489f9109beac4a88a1f) data output.
