@@ -4,6 +4,31 @@
 <img src="https://github.com/brainlife/app-CIT168Parc/raw/main/birdface.gif" alt="birdface" width="232" height="193"/>
 
 # app-CIT168Parc
+
+<!-- brainlife-app:begin (generated from the App manifest; edit the manifest, not this block) -->
+
+**Generates a subject-specific parcellation of subcortical nuclei by registering the CIT168 probabilistic atlas (Pauli et al. 2018) to a T1-weighted image with atlaskit and thresholding the warped probabilities at 0.5.**
+
+Registers the CIT168 700 um T1w template to the subject T1 with the atlaskit tmp2ind_T1 script, warps the lateralised CIT168 probabilistic atlas into subject space and converts it to a deterministic parcellation (probability above 0.5). Use it to obtain subcortical nuclei ROIs (for example for tractography or connectomics). Needs a whole-head (not brain-extracted) T1w image.
+
+Run it on brainlife.io: [https://doi.org/10.25663/brainlife.app.449](https://doi.org/10.25663/brainlife.app.449)
+
+| Input | Datatype | Required | Description |
+|---|---|---|---|
+| `t1w` | `neuro/anat/t1w` (!brain_extracted) | yes | This is the T1 image which will be have its subcortical regions parcellated and labeled. |
+
+| Output | Datatype | Description |
+|---|---|---|
+| `output` | `neuro/parcellation/volume` | This is a 3D, volumetric parcellation of subcortical regions(in nifti format) of the associated input T1 image |
+
+Runtime: container `brainlife/atlaskit:1.0`; 8 CPUs; 28 GB memory; 10 h walltime.
+
+Please cite:
+- Pauli W., Nili A., Tyszka J. A high-resolution probabilistic in vivo atlas of human subcortical brain nuclei. Sci Data 5, 180063 (2018). [doi:10.1038/sdata.2018.63](https://doi.org/10.1038/sdata.2018.63)
+- Avesani P. et al. The open diffusion data derivatives. Sci Data 6, 69 (2019). [doi:10.1038/s41597-019-0073-y](https://doi.org/10.1038/s41597-019-0073-y)
+
+<!-- brainlife-app:end -->
+
 This app generates a subject-specific parcellation of subcortical areas using the [CIT168 parcellation](https://identifiers.org/neurovault.collection:3145).
 
 ### Authors
