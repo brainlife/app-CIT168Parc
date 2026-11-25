@@ -14,7 +14,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-lightgrey.svg" alt="MIT license"></a>
 </p>
 
-## 🧠 At a glance
+## At a glance
 
 <!-- brainlife-app:begin (generated from the App manifest; edit the manifest, not this block) -->
 
@@ -24,19 +24,19 @@ Registers the CIT168 700 um T1w template to the subject T1 with the atlaskit tmp
 
 | | |
 |---|---|
-| 📥 **Inputs** | `neuro/anat/t1w` |
-| 📤 **Outputs** | `neuro/parcellation/volume` |
-| 🐳 **Container** | `brainlife/atlaskit:1.0` |
-| ⚙️ **Resources** | 8 CPUs · 28 GB memory · 10 h walltime |
-| 🔗 **Run it** | [doi.org/10.25663/brainlife.app.449](https://doi.org/10.25663/brainlife.app.449) |
+| **Inputs** | `neuro/anat/t1w` |
+| **Outputs** | `neuro/parcellation/volume` |
+| **Container** | `brainlife/atlaskit:1.0` |
+| **Resources** | 8 CPUs · 28 GB memory · 10 h walltime |
+| **Run it** | [doi.org/10.25663/brainlife.app.449](https://doi.org/10.25663/brainlife.app.449) |
 
-#### 📥 Inputs
+#### Inputs
 
 | Input | Datatype | Required | Description |
 |---|---|---|---|
 | `t1w` | `neuro/anat/t1w` (!brain_extracted) | yes | This is the T1 image which will be have its subcortical regions parcellated and labeled. |
 
-#### 📤 Outputs
+#### Outputs
 
 | Output | Datatype | Description |
 |---|---|---|
@@ -44,15 +44,15 @@ Registers the CIT168 700 um T1w template to the subject T1 with the atlaskit tmp
 
 <!-- brainlife-app:end -->
 
-## 🚀 Running the App
+## Running the App
 
 The App registers the CIT168 700 µm T1w template to the subject's T1 with the [atlaskit](https://github.com/jmtyszka/atlaskit/wiki) `tmp2ind_T1.sh` script (ANTs), warps the lateralised CIT168 probabilistic atlas ([Pauli et al. 2018](https://identifiers.org/neurovault.collection:3145)) into subject space, and converts it to a deterministic parcellation with `prob2det.sh` (voxels with probability above 0.5).
 
-### ☁️ On brainlife.io
+### On brainlife.io
 
 Open the App at [doi.org/10.25663/brainlife.app.449](https://doi.org/10.25663/brainlife.app.449), choose a T1-weighted dataset from your project and press **Execute**. The input must be a whole-head image (datasets tagged `brain_extracted` are not accepted), because the CIT168 template it is registered to is not skull-stripped. The parcellation is archived to your project as a `neuro/parcellation/volume` dataset tagged `subcortical`, ready for tractography or connectomics Apps that take ROIs. Any project with T1 data works as a test, for example the [Human Connectome Project 3T](https://brainlife.io/project/5941a225f876b000210c11e5/detail) project.
 
-### 💻 Locally
+### Locally
 
 You need [Singularity/Apptainer](https://apptainer.org/) and [`jq`](https://jqlang.github.io/jq/). The App runs inside the [`brainlife/atlaskit:1.0`](https://hub.docker.com/r/brainlife/atlaskit) container, which ships atlaskit, ANTs, FSL and the CIT168 templates (including the [lateralised atlas](https://github.com/brainlife/docker-atlaskit/tree/master/CIT168Atlases)) under `/template`.
 
@@ -76,7 +76,7 @@ Running outside the container needs Python 3.4+, FSL 5.0.9+, ANTs 2.1.0+, atlask
 - The CIT168 parcellation published on NeuroVault is **not lateralised** (left and right variants of a structure share a label). Lateralise it as described in [issue #2](https://github.com/brainlife/app-CIT168Parc/issues/2), or use the lateralised version shipped in the container.
 - atlaskit expects a 4D probabilistic atlas; merge the separate 3D atlas volumes with [`fslmerge`](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Fslutils) first.
 
-## 📦 Outputs
+## Outputs
 
 ```text
 output/
@@ -107,12 +107,12 @@ Labels (odd = left, even = right):
 | 29 | l_mamillary_nucleus | 30 | r_mamillary_nucleus |
 | 31 | l_subthalamic_nucleus | 32 | r_subthalamic_nucleus |
 
-## 🩺 Troubleshooting
+## Troubleshooting
 
 - **Poor registration or a misplaced parcellation**: use a whole-head T1; a skull-stripped image does not match the non-skull-stripped CIT168 template.
 - **Unlateralised labels when running locally**: see the note on lateralisation above.
 
-## 📚 Citing
+## Citing
 
 > [!TIP]
 > If you use this App in your work, please cite the App, the software it builds on and brainlife.io (below). GitHub's **Cite this repository** button gives the App citation in APA and BibTeX.
@@ -123,14 +123,14 @@ Labels (odd = left, even = right):
 - Avesani P. et al. The open diffusion data derivatives. Sci Data 6, 69 (2019). [doi:10.1038/s41597-019-0073-y](https://doi.org/10.1038/s41597-019-0073-y)
 - Hayashi S, Caron BA, Heinsfeld AS, et al. brainlife.io: a decentralized and open-source cloud platform to support neuroscience research. *Nature Methods* 21:809–813 (2024). [doi:10.1038/s41592-024-02237-2](https://doi.org/10.1038/s41592-024-02237-2)
 
-## 👥 Authors
+## Authors
 
 - Daniel Bullock
 - Franco Pestilli (project director)
 
 **Contributors:** Soichi Hayashi
 
-## 💰 Funding
+## Funding
 
 [![Wellcome-226486/Z/22/Z](https://img.shields.io/badge/Wellcome-226486%2FZ%2F22%2FZ-purple.svg)](https://wellcome.org/)
 [![NIH-NINDS-U24NS140384](https://img.shields.io/badge/NIH_NINDS-U24NS140384-green.svg)](https://reporter.nih.gov/project-details/11261037)
@@ -149,6 +149,6 @@ Labels (odd = left, even = right):
 
 <sub>brainlife.io is publicly funded, and acknowledging that support helps keep it running. This App was developed with support from Wellcome, the U.S. National Institutes of Health (including the BRAIN Initiative BRAIN CONNECTS program: The Axonal Projectome EXchange, U24NS140384, and the Center for Mesoscale Connectomics, UM1NS132207) and the U.S. National Science Foundation.</sub>
 
-## ⚖️ License
+## License
 
 [MIT](LICENSE). The CIT168 atlas and atlaskit are distributed under their own terms.
